@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script type="text/javascript" src="calculator.js"></script>
+        <style>
+            input[type=button]{
+                font-size: 36px;
+                margin: 5px;
+            }	
+            input[type=reset]{
+                font-size: 36px;
+                margin: 5px;
+            }
+            input[type=text]{
+                width: 300px;
+                height: 75px;
+                font-size: 48px;
+                text-align: right;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container col-4 p-5 border border-dark text-center" >
+            <form name="calc">
+                <input type="text" name="display" readonly>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btn7" value="7" onclick="pressBtn(7)">
+                    <input type="button" class="form-control col" name="btn8" value="8" onclick="pressBtn(8)">
+                    <input type="button" class="form-control col" name="btn9" value="9" onclick="pressBtn(9)">
+                </div>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btn4" value="4" onclick="pressBtn(4)">
+                    <input type="button" class="form-control col" name="btn5" value="5" onclick="pressBtn(5)">
+                    <input type="button" class="form-control col" name="btn6" value="6" onclick="pressBtn(6)">
+                </div>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btn1" value="1" onclick="pressBtn(1)">
+                    <input type="button" class="form-control col" name="btn2" value="2" onclick="pressBtn(2)">
+                    <input type="button" class="form-control col" name="btn3" value="3" onclick="pressBtn(3)">
+                </div>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btn0" value="0" onclick="pressBtn(0)">
+                    <input type="button" class="form-control col" name="btnFloat" value="">
+                    <input type="button" class="form-control col" name="btnDivision" value="/" onclick="pressOP('D')">
+                </div>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btnAdd" value="+" onclick="pressOP('P')">
+                    <input type="button" class="form-control col" name="btnMinus" value="-" onclick="pressOP('M')">
+                    <input type="button" class="form-control col" name="btnMultiply" value="*" onclick="pressOP('Multiply')" > 
+                </div>
+                <div class="row">
+                    <input type="button" class="form-control col" name="btnInverse" value="1/x" onclick="inverse()">
+                    <input type="reset" class="form-control col" name="btnReset" value="C" >
+                    <input type="button" class="form-control col" name="btnEqual" value="=" onclick="pressEqual()" >
+                </div>
+                
+            
+            </form>
+        </div>
+        
+    </body>
+</html>
